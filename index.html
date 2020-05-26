@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kółko i krzyżyk</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/logon.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="password-reminder-modal-box" class="modal">
+        <div class="modal-content">
+            Podpowiedź: Psssst...
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <div id="incorrect-data-modal-box" class="modal">
+        <div class="modal-content">
+            Uzupełnij formularz poprawnymi danymi.
+            <span class="close" id="icd-close">&times;</span>
+        </div>
+    </div>
+
+    <div id="empty-form-modal-box" class="modal">
+        <div class="modal-content">
+            Uzupełnij wszystkie pola formularza!
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <h1>Zaloguj się</h1>
+
+    <div id="logon-container">
+        <form id="logon-form">
+
+            <div id="login">
+                <label>Użytkownik:</label>
+                <input name="login" id="login-input"><br><br>
+            </div>
+
+            <div id="password">
+                <label>Hasło:</label>
+                <input type="password" name="password" id="password-input"><br><br>
+            </div>
+
+            <div id="code">
+                <div id="code-left">
+                    <label>Przepisz kod:</label>
+                    <input type="button" id="code-reset-btn" value="?" onclick="generateCode();">
+                </div>
+                <div id="code-right">
+                    <input type="text" id="code-input">
+                    <a id="codeField"></a>
+                </div>
+            </div>
+
+            <div id="buttons">
+                <input type="button" value="Zapomniałeś hasła?" id="forgot-pass-button">
+                <input type="button" value="Zaloguj" id="try-logon-button" onclick="validate();">
+            </div>
+
+        </form>
+    </div>
+
+    <script src="scripts/logon.js"></script>
+</body>
+
+</html>

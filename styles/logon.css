@@ -1,0 +1,121 @@
+* {
+    font-size: 22px;
+}
+
+#logon-container { 
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login, #password, #code, #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+#login label, #password label {
+    width: 100px;
+    margin-right: 20px;
+}
+
+#code-left {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#code-right {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#code label {
+    width: 80px;
+}
+
+#code-reset-btn {
+    width: 20px;
+}
+
+input {
+    border-radius: 8px;
+}
+
+#login-input, #password-input {
+    border-radius: 8px;
+    width: 200px;
+}
+
+#code-input {
+    width: 170px;
+}
+
+a {
+    width: 30px;
+    text-align: right;
+}
+
+a:hover {
+    color: white;
+}
+
+#buttons input {
+    width: 150px;
+}
+
+#forgot-pass-button {
+    margin-right: 20px;
+}
+
+/* alerts */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+.modal-content {
+    background-color: #818080;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+.close {
+    background-color: #818080;
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

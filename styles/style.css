@@ -1,0 +1,229 @@
+* {
+    background-color: black;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 200;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 70px;
+    margin-top: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+#boardimagebox {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#boardimage {
+    width: 250px;
+}
+
+#menu {
+    list-style: none;
+}
+
+#menu li {
+    text-align: center;
+    font-size: 30px;
+    width: 350px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#menu li a, button {
+    font-size: inherit;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+li:hover, a:hover, button:hover {
+    color: rgb(0, 255, 55);
+}
+
+input[type=button]:hover {
+    color: rgb(0, 255, 55);
+}
+
+.material-icons:hover {
+    color: rgb(161, 161, 161);
+}
+
+/* Ustawienia rozgrywki */
+
+#settings button {
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    /* border: 1px solid white;
+    border-radius: 10px; */
+    margin: 10px;
+    text-align: center;
+}
+
+#boardsetting button, #timesetting button, #playersetting button, #start button {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#boardsetting {
+    text-align: center;
+}
+
+/* button:focus {
+    color: rgb(0, 255, 0); 
+} */
+
+#timesetting {
+    text-align: center;
+}
+
+#playersetting {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#top, #bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#sign {
+    font-size: 80px;
+}
+
+#start {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#start button {
+    width: 80%;
+}
+
+#start a {
+    text-decoration: none;
+}
+
+/* Rozgrywka */
+
+#nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#scene {
+    margin-top: 50px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: space-around;
+}
+
+#firstplayer {
+    margin-top: 30px;
+    width: 20%;
+    float: left;
+}
+
+#secondplayer {
+    margin-top: 30px;
+    width: 20%;
+    float: right;
+}
+
+#board {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+
+#board img { width: 250px; } /* temp */
+
+p {
+    font-size: 35px;
+}
+
+#tour {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+.float {
+	border-width: 1px;
+    border-style: solid;
+    border-color: white;
+	width: 100px;
+	height: 100px;
+	float:left;
+}
+
+#field3 {
+	float:none;
+}
+
+#field7 {
+	float:none;
+}
+
+#game {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.fields {
+	width:100%;
+	height:100%;
+}
+
+#swapSign {
+	width:100px;
+	height:100px;
+}
+
+#p2Time {
+    text-align: right;
+}
+
+#timers {
+    display: flex;
+}
+
+.timer {
+    width: 50%;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+

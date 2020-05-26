@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kółko i krzyżyk</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="nav">
+        <div><a onclick="homePage()" class="material-icons">arrow_back</a></div>
+        <div>
+            <h1>Ustawienia rozgrywki</h1>
+        </div>
+        <div id="spacer"></div>
+    </div>
+
+    <div id="settings">
+
+        <div id="boardsetting">
+            <h2>Plansza</h2>
+            <button onclick="setBoard(3)">3x3</button>
+            <button onclick="setBoard(5)">5x5</button>
+        </div>
+
+        <div id="timesetting">
+            <h2>Czas gracza</h2>
+            <button onclick="timer(10)">Brak</button>
+            <button onclick="timer(30000)">30 sec</button>
+            <button onclick="timer(60000)">60 sec</button>
+        </div>
+
+        <div id="playersetting">
+
+            <div id="top">
+                <div id="spacer"></div>
+                <h2>Gracz 1</h2>
+                <h2>Gracz 2</h2>
+                <div id="spacer"></div>
+            </div>
+
+        </div>
+
+        <div id="bottom">
+            <div id="spacer"></div>
+            <div id="sign1"><button id="buts1" style="background-image:url('img/o.png'); width:100px; height:100px;"
+                    disabled></button></div>
+            <button onClick="swapSign()" id="swapSign">Zamień znaki</button>
+            <div id="sign2"><button id="buts2" style="background-image:url('img/x.png'); width:100px; height:100px;"
+                    disabled></button></div>
+            <div id="spacer"></div>
+        </div>
+
+        <div id="start">
+            <button onclick="startGame()">
+                <a>Zaczynamy!</a>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="scripts/game.js"></script>
+
+</body>
+
+</html>
